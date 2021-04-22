@@ -5,19 +5,18 @@
 }
 
 body{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(47,150,163), rgb(48,62,143));
+    background: #f50856;
     font-family: sans-serif;
     color: white;
 
 }
 
 .dev{
-
     height: 30vh;
     width: 50%;
     display: flex;
@@ -25,7 +24,7 @@ body{
 }
 .location,
 .temperature{
-    height: 30vh;
+    height: 20vh;
     width: 50%;
     display: flex;
     justify-content: space-around;
@@ -47,3 +46,21 @@ body{
 .degree-section h2{
     font-size: 40px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .location{
+        width:600px;
+    }
+    .dev{
+        font-size: 30px;
+        margin-left: -70px;
+    }
+    .location-timezone{
+        margin-left: -68px;
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+  }
+  
