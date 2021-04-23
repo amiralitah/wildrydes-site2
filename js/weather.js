@@ -10,8 +10,8 @@ window.addEventListener('load', () =>{
     navigator.geolocation.getCurrentPosition(position =>{
         long = position.coords.longitude;
         lat = position.coords.latitude;
-        // const proxy = "https://cors-anywhere.herokuapp.com/";
-        const proxy = "https://cors.bridged.cc/";
+        const proxy = "https://cors-anywhere.herokuapp.com/";
+        // const proxy = "https://cors.bridged.cc/";
         const api = `${proxy}https://api.darksky.net/forecast/61d068278caf0a12abad1a15756b4cd7/${lat},${long}`;
         fetch(api)
         .then(response =>{
