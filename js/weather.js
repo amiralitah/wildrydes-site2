@@ -6,7 +6,7 @@ window.addEventListener('load', () =>{
     let weatherd = document.querySelector(".temperature-description");
     let timezone = document.querySelector(".location-timezone");
     let temperatures = document.querySelector(".temperature span");
-    if(navigator.geolocation){
+    if(navigator && navigator.geolocation){
     navigator.geolocation.getCurrentPosition(position =>{
         long = position.coords.longitude;
         lat = position.coords.latitude;
